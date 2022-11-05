@@ -185,3 +185,7 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+p {
+  font: 1em sans-serif;
+}
