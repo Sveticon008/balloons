@@ -1,130 +1,14 @@
-*, ::after, ::before
-    margin: 0
-    padding: 0
-    box-sizing: border-box
+@import abstracts/variable
+@import abstracts/mixin
+@import abstracts/fuction
 
-html
-    font-size: 62.5%
+@import base/animation
+@import base/base
+@import base/typography
+@import base/utility
 
-body
-    font-family: 'Roboto', sans-serif
-    font-size: 1.6rem
-    font-weight: 400
-    color: #777777
-    letter-spacing: .2rem
-    padding: 5rem
-    background-color: white
+@import components/button
 
-.main-container
-    background-color: #F7F7F7
+@import layout/header
 
-.header
-    position: relative
-    height: 95vh
-    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-bg.jpg) center / cover no-repeat
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
-    &__logo
-        width: 5.6rem
-        height: 7rem
-        position: absolute
-        top: 5rem
-        left: 5rem
-    &__wrapper
-        position: absolute
-        width: 100%
-        text-align: center
-        top: 45%
-        left: 50%
-        transform: translate(-50%, -50%)
-    &__catalog-btn
-        animation: BtmToTop 2s ease .8s
-        backface-visibility: hidden
-        animation-fill-mode: backwards
-
-.title
-    text-transform: uppercase
-    letter-spacing: 1rem
-    font-weight: 800
-
-.title-first
-    color: #FFFFFF
-    &__main
-        display: block
-        font-size: 5rem
-        line-height: 6rem
-        margin-bottom: 1rem
-        animation: leftToRight 2s ease .8s
-        backface-visibility: hidden
-        animation-fill-mode: backwards
-    &__secondary
-        display: block
-        font-size: 4rem
-        letter-spacing: .5rem
-        font-weight: 300
-        line-height: 4.8rem
-        margin-bottom: 6.5rem
-        animation: RightToLeft 2s ease .8s
-        backface-visibility: hidden
-        animation-fill-mode: backwards
-
-.button
-    position: relative
-    font-size: 2rem
-    letter-spacing: .5rem
-    line-height: 2.4rem
-    color: #777777
-    &:link, &:visited
-        text-decoration: none
-        background-color: #F7F7F7
-        border-radius: 5rem
-        text-transform: uppercase
-        padding: 1.5rem 4rem
-        display: inline-block
-        transition: all .8s
-    &:hover
-        transform: translateY(-.4rem)
-        box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.3)
-        &::after
-            opacity: 0
-            transform: scaleX(1.5) scaleY(1.9)
-    &:active
-        transform: translateY(-.2rem)
-        box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.1)
-    &::after
-        content: ""
-        background-color: transparent
-        border: #F7F7F7 solid .1rem
-        width: 99%
-        height: 98%
-        border-radius: 5rem
-        display: inline-block
-        position: absolute
-        top: 0
-        left: 0
-        z-index: -1
-        transition: all .5s
-
-
-@keyframes leftToRight
-    0%
-        opacity: 0
-        transform: translateX(-10rem)
-    100%
-        opacity: 1
-        transform: translateX(0px)
-
-@keyframes RightToLeft
-    0%
-        opacity: 0
-        transform: translateX(10rem)
-    100%
-        opacity: 1
-        transform: translateX(0px)
-
-@keyframes BtmToTop
-    0%
-        opacity: 0
-        transform: translateY(5rem)
-    100%
-        opacity: 1
-        transform: translateY(0px)
+@import pages/home
