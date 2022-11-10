@@ -188,4 +188,65 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  background: #ff0b0b49;
+}
+
+/* line 5, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+/* line 9, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/abstracts/_mixin.sass */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ^ - выбирает только элементы начинающиеся на указанные символы; $ - фильтрует по окончанию, * - фильтрует по наличию символов в люблм месте */
+/* line 10, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+[class^="col-"] {
+  background: #6deb5388;
+  float: left;
+}
+
+/* line 12, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+[class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+/* line 16, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+.col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+/* line 19, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+.col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+/* line 22, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+.col-2-of-3 {
+  width: calc((100% - 2 * 6rem) / 3 * 2 + 6rem);
+}
+
+/* line 25, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+.col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+
+/* line 28, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+.col-2-of-4 {
+  width: calc((100% - 3 * 6rem) / 4 * 2 + 6rem);
+}
+
+/* line 31, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+.col-3-of-4 {
+  width: calc((100% - 3 * 6rem) / 4 * 3 + 2 * 6rem);
+}
+
 /*# sourceMappingURL=style.css.map */

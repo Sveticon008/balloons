@@ -4,3 +4,9 @@
     border-radius: 5rem
     text-transform: uppercase
     display: inline-block
+
+@mixin clearfix
+    &::after
+        content: ""
+        display: table
+        clear: both
