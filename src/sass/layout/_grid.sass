@@ -1,14 +1,12 @@
 .row
     max-width: $grid-max-width
     margin: 0 auto
-    background: #ff0b0b49
     &:not(:last-child)
         margin-bottom: $margin-vertical-big
     @include clearfix
 
 /* ^ - выбирает только элементы начинающиеся на указанные символы; $ - фильтрует по окончанию, * - фильтрует по наличию символов в люблм месте */
 [class^="col-"]
-    background: #6deb5388
     &:not(:last-child)
         margin-right: $gutter-horizontal
     float: left

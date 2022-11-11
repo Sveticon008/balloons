@@ -100,7 +100,13 @@ body {
   animation-fill-mode: backwards;
 }
 
-/* line 34, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
+/* line 35, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
+.section-about__text {
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+/* line 39, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
 .title-secondary {
   display: inline-block;
   text-align: center;
@@ -112,11 +118,28 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 43, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
+/* line 48, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
 .title-secondary:hover {
   transform-origin: 50% 20%;
   transform: perspective(77.5rem) rotateY(-25deg);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+/* line 53, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
+.title-third {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+/* line 61, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
+.paragraph {
+  font-weight: 400;
+  letter-spacing: .2rem;
+  font-size: 1.6rem;
 }
 
 /* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_utility.sass */
@@ -190,6 +213,30 @@ body {
   transition: all .5s;
 }
 
+/* line 2, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button-text.sass */
+.btn-text:link, .btn-text:visited {
+  text-decoration: none;
+  color: #777777;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  padding: 1rem;
+  border-bottom: 0.18rem solid #A14F03;
+}
+
+/* line 11, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button-text.sass */
+.btn-text:hover {
+  background: #BA8554;
+  color: #FAFAFA;
+}
+
+/* line 14, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button-text.sass */
+.btn-text:active {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
 /* line 3, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_header.sass */
 .header {
   position: relative;
@@ -221,10 +268,9 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  background: #ff0b0b49;
 }
 
-/* line 5, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 4, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
@@ -237,43 +283,42 @@ body {
 }
 
 /* ^ - выбирает только элементы начинающиеся на указанные символы; $ - фильтрует по окончанию, * - фильтрует по наличию символов в люблм месте */
-/* line 10, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 9, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 [class^="col-"] {
-  background: #6deb5388;
   float: left;
 }
 
-/* line 12, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 10, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
 }
 
-/* line 16, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 14, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
 }
 
-/* line 19, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 17, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
 
-/* line 22, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 20, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 .col-2-of-3 {
   width: calc((100% - 2 * 6rem) / 3 * 2 + 6rem);
 }
 
-/* line 25, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 23, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
 }
 
-/* line 28, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 26, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 .col-2-of-4 {
   width: calc((100% - 3 * 6rem) / 4 * 2 + 6rem);
 }
 
-/* line 31, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
+/* line 29, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 .col-3-of-4 {
   width: calc((100% - 3 * 6rem) / 4 * 3 + 2 * 6rem);
 }
