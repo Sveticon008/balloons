@@ -216,7 +216,7 @@ body {
 /* line 2, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button-text.sass */
 .btn-text:link, .btn-text:visited {
   text-decoration: none;
-  color: #777777;
+  color: #BA8554;
   font-weight: 700;
   letter-spacing: .2rem;
   font-size: 1.6rem;
@@ -235,6 +235,87 @@ body {
 .btn-text:active {
   text-decoration: none;
   color: #FAFAFA;
+}
+
+/* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_photo-composition.sass */
+.composition {
+  position: relative;
+}
+
+/* line 3, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_photo-composition.sass */
+.composition__photo {
+  width: 55%;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 10;
+  transition: all .3s;
+  outline-offset: 0.5rem;
+}
+
+/* line 11, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_photo-composition.sass */
+.composition__photo_back {
+  top: 0;
+  left: 1.5rem;
+}
+
+/* line 14, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_photo-composition.sass */
+.composition__photo_middle {
+  top: 3rem;
+  right: 1rem;
+}
+
+/* line 17, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_photo-composition.sass */
+.composition__photo_front {
+  top: 13rem;
+  left: 10rem;
+}
+
+/* line 20, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_photo-composition.sass */
+.composition__photo:hover {
+  outline: 1.5rem solid #A14F03;
+  transform: scale(1.1);
+  z-index: 20;
+}
+
+/* line 24, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_photo-composition.sass */
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.85);
+}
+
+/* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_features-card.sass */
+.features-card {
+  padding: 2.5rem;
+  background-color: rgba(250, 250, 250, 0.8);
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  transition: all .2s;
+}
+
+/* line 8, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_features-card.sass */
+.features-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* line 10, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_features-card.sass */
+.features-card__icon {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+  font-size: 6.2rem;
+  background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* line 17, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_features-card.sass */
+.features-card__title {
+  margin-bottom: 1rem;
+}
+
+/* line 19, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_features-card.sass */
+.features-card__text {
+  line-height: 19px;
 }
 
 /* line 3, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_header.sass */
@@ -326,6 +407,20 @@ body {
 /* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/pages/_home.sass */
 .section-about {
   padding-top: 8rem;
+  margin-bottom: 5.4rem;
+}
+
+/* line 5, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/pages/_home.sass */
+.section-features {
+  height: 85vh;
+  background: linear-gradient(91.4deg, rgba(186, 133, 84, 0.7) 0.7%, rgba(1, 1, 1, 0.7) 98.8%), url(../img/features-bg.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+  padding-top: 21.6rem;
+}
+
+/* line 10, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/pages/_home.sass */
+.section-features__icon {
+  font-size: 6.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
