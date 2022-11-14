@@ -118,14 +118,14 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 48, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
-.title-secondary:hover {
+/* line 49, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
+.title-secondary_animated:hover {
   transform-origin: 50% 20%;
   transform: perspective(77.5rem) rotateY(-25deg);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
 
-/* line 53, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
+/* line 54, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
 .title-third {
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -135,7 +135,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* line 61, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
+/* line 62, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_typography.sass */
 .paragraph {
   font-weight: 400;
   letter-spacing: .2rem;
@@ -318,6 +318,49 @@ body {
   line-height: 19px;
 }
 
+/* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_tour-cards.sass */
+.tour-card {
+  height: 50.2rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+
+/* line 6, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_tour-cards.sass */
+.tour-card__side {
+  height: 50.2rem;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0px 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: .9s all ease-out;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+/* line 17, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_tour-cards.sass */
+.tour-card__side_front {
+  background: #FFFFFF;
+}
+
+/* line 19, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_tour-cards.sass */
+.tour-card__side_back {
+  background: linear-gradient(156.85deg, #C3956A 3.65%, #A24F03 100%);
+  transform: rotateY(180deg);
+}
+
+/* line 22, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_tour-cards.sass */
+.tour-card:hover .tour-card__side_front {
+  transform: rotateY(180deg);
+}
+
+/* line 24, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_tour-cards.sass */
+.tour-card:hover .tour-card__side_back {
+  transform: rotateY(0deg);
+}
+
 /* line 3, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_header.sass */
 .header {
   position: relative;
@@ -416,9 +459,10 @@ body {
   background: linear-gradient(91.4deg, rgba(186, 133, 84, 0.7) 0.7%, rgba(1, 1, 1, 0.7) 98.8%), url(../img/features-bg.jpg) center/cover no-repeat;
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
   padding-top: 21.6rem;
+  margin-bottom: 8rem;
 }
 
-/* line 10, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/pages/_home.sass */
+/* line 11, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/pages/_home.sass */
 .section-features__icon {
   font-size: 6.2rem;
 }
