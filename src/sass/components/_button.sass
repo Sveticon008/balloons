@@ -4,6 +4,19 @@
         animation: BtmToTop 2s ease .8s
         backface-visibility: hidden
         animation-fill-mode: backwards
+        &::after
+            content: ""
+            background-color: transparent
+            border: #F7F7F7 solid .1rem
+            width: 99%
+            height: 98%
+            border-radius: 5rem
+            display: inline-block
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -1
+            transition: all .5s
 
 .button
     position: relative
@@ -13,7 +26,6 @@
     color: $color-grey
     &:link, &:visited
         @include link-style
-        padding: 1.5rem 4rem
         transition: all .8s
     &:hover
         transform: translateY(-.4rem)
@@ -24,16 +36,8 @@
     &:active
         transform: translateY(-.2rem)
         box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.1)
-    &::after
-        content: ""
-        background-color: transparent
-        border: #F7F7F7 solid .1rem
-        width: 99%
-        height: 98%
-        border-radius: 5rem
-        display: inline-block
-        position: absolute
-        top: 0
-        left: 0
-        z-index: -1
-        transition: all .5s
+    &_main
+        padding: 1.5rem 4rem
+    &_white
+        box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.3)
+        padding: 1.5rem 2rem
