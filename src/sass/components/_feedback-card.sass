@@ -1,0 +1,45 @@
+.feedback-card
+    width: 80%
+    background: rgba(255, 255, 255, 0.8)
+    box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.3)
+    margin: 0 auto
+    padding: 5.5rem 9rem 6.5rem 9rem
+    transform: skewX(-13deg)
+    & > *
+        transform: skewX(13deg)
+    &__img
+        width: 15rem
+        height: 15rem
+        float: left
+        border-radius: 10rem
+        shape-outside: circle(40% at 50% 50%)
+        -webkit-shape-outside: circle(40% at 50% 50%)
+        margin-right: 5rem
+        overflow: hidden
+        position: relative
+    &__photo
+        height: 100%
+        transform: scale(1.1)
+        transition: .5s all
+    &__name
+        text-align: center
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -20%)
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        letter-spacing: .2rem;
+        color: #FFFFFF;
+        text-shadow: 0px .5rem .5rem rgba(0, 0, 0, 0.7)
+        text-transform: uppercase
+        opacity: 0
+        transition: .5s all
+    &:hover &__name
+        transform: translate(-50%, -50%)
+        opacity: 1
+    &:hover &__photo
+        transform: scale(1)
+        filter: blur(4px) brightness(75%)
+        
