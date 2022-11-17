@@ -185,42 +185,50 @@ body {
 }
 
 /* line 27, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
-.button:link, .button:visited {
+.button, .button:link, .button:visited {
   text-decoration: none;
   background-color: #FFFFFF;
   border-radius: 5rem;
   text-transform: uppercase;
   display: inline-block;
   transition: all .8s;
+  border: none;
 }
 
-/* line 30, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
+/* line 31, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
 .button:hover {
   transform: translateY(-0.4rem);
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
-/* line 33, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
+/* line 34, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
 .button:hover::after {
   opacity: 0;
   transform: scaleX(1.5) scaleY(1.9);
 }
 
-/* line 36, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
+/* line 37, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
 .button:active {
   transform: translateY(-0.2rem);
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
-/* line 39, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
+/* line 40, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
 .button_main {
   padding: 1.5rem 4rem;
 }
 
-/* line 41, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
+/* line 42, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
 .button_white {
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   padding: 1.5rem 2rem;
+}
+
+/* line 45, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button.sass */
+.button_brown {
+  padding: 1.5rem 2rem;
+  background-color: #BA8554;
+  color: #FAFAFA;
 }
 
 /* line 2, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_button-text.sass */
@@ -551,6 +559,129 @@ body {
   filter: sepia(30%);
 }
 
+/* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.book-card {
+  height: 50rem;
+  background: linear-gradient(108deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.96) 52%, rgba(186, 133, 84, 0.76) 52.1%, rgba(161, 79, 3, 0.76) 100%), url(../img/form-bg.jpg) center/cover no-repeat;
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+}
+
+/* line 6, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.book-card__form {
+  width: 60%;
+  padding-left: 5rem;
+}
+
+/* line 9, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.book-card__title {
+  text-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+/* line 13, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.book-card__input-wrapper:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+/* line 15, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.book-card__input-wrapper:nth-child(3) {
+  margin-bottom: 4rem;
+}
+
+/* line 17, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.book-card__group-radio {
+  display: inline-block;
+}
+
+/* line 19, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.book-card__group-radio:not(:last-child) {
+  margin-right: 5.4rem;
+  padding-left: 3.5rem;
+}
+
+/* line 23, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form__input {
+  width: 70%;
+  padding: 2rem 0rem 2rem 2rem;
+  background: white;
+  border: none;
+  border-bottom: solid .2rem transparent;
+  border-radius: .3rem;
+  transition: border-bottom .3s ease-in;
+}
+
+/* line 31, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form__input:focus {
+  outline: none;
+  border-bottom: solid .2rem #66D763;
+}
+
+/* line 34, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form__input:focus:invalid {
+  border-bottom: solid .2rem #D76363;
+}
+
+/* line 36, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form__label {
+  display: block;
+  padding-top: .2rem;
+  padding-left: 1.5rem;
+  transition: all .8s;
+}
+
+/* line 41, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1rem);
+}
+
+/* line 46, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form-radio {
+  display: none;
+}
+
+/* line 48, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form-radio__label {
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 51, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form-radio__label_customed {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: #BA8554 0.5rem solid;
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  left: -3.5rem;
+}
+
+/* line 60, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form-radio__label_customed::after {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: #BA8554;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .3s all;
+}
+
+/* line 73, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_book-card.sass */
+.form-radio:checked ~ .form-radio__label .form-radio__label_customed::after {
+  opacity: 1;
+}
+
 /* line 3, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_header.sass */
 .header {
   position: relative;
@@ -675,6 +806,7 @@ body {
 /* line 24, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/pages/_home.sass */
 .section-book {
   padding: 10rem;
+  background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
 }
 
 /*# sourceMappingURL=style.css.map */

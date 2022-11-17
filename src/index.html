@@ -247,9 +247,48 @@
             </section>
 
             <section class="section-book">
-                <div class="section-book__card book-card">
-                    <div class="mb-80px">
-                        <h2 class="title-secondary title">ЗАБРОНИРОВАТЬ ТУР</h2>
+                <div class="row">
+                    <div class="section-book__card book-card">
+                        
+                        <div class="book-card__form">
+                            <h2 class="book-card__title title-secondary title">ЗАБРОНИРОВАТЬ ТУР</h2>
+
+                            <form action="#" class="form">
+                                <div class="book-card__input-wrapper">
+                                    <input type="text" class="form-name form__input paragraph" placeholder="Имя Фамилия" id="name" required pattern="[A-Za-zА-Яа-яЁё]+$\s?">
+                                    <label for="name" class="form__label paragraph">Ваше имя и фамилия</label>
+                                </div>
+                            
+                                
+                                <div class="book-card__input-wrapper">
+                                    <input type="tel" class="form-phone form__input paragraph" placeholder="+7(999)-999-99-99" id="tel" required minlength="10" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}">
+                                    <label for="tel" class="form__label paragraph">Номер телефона для связи</label>
+                                </div>
+
+                                <div class="book-card__input-wrapper">
+                                    <div class="book-card__group-radio">
+                                        <input type="radio" id="group-tour" class="form-radio paragraph" name="checked" required>
+                                        <label for="group-tour" class="form-radio__label paragraph"><span class="form-radio__label_customed"></span>
+                                            Групповой тур</label>
+                                    </div>
+    
+                                    <div class="book-card__group-radio">
+                                        <input type="radio" id="ind-tour" class="form-radio paragraph" name="checked" required>
+                                        <label for="ind-tour" class="form-radio__label paragraph"><span class="form-radio__label_customed"></span>
+                                            Индивидуальный тур</label>
+                                    </div>
+                                </div>
+
+                                <div class="book-card__input-wrapper">
+                                    <button type="submit" value="Отправить" class="button button_brown">Забронировать</button>
+                                </div>
+                            </form>
+
+                            
+
+
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -262,7 +301,22 @@
     </div>
 
 
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".form-phone").mask("+7(999)999-99-99");
+});
 
+form.submit(function(e){
+    e.preventDefault();
+    if (form.valid()) {
+        alert('Форма отправлена');
+    }
+    return;
+});
+</script>
 
 
 
