@@ -492,14 +492,15 @@ body {
   margin: 0 auto;
   padding: 5.5rem 9rem 6.5rem 9rem;
   transform: skewX(-13deg);
+  backface-visibility: hidden;
 }
 
-/* line 8, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
+/* line 9, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
 .feedback-card > * {
   transform: skewX(13deg);
 }
 
-/* line 10, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
+/* line 11, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
 .feedback-card__img {
   width: 15rem;
   height: 15rem;
@@ -512,14 +513,14 @@ body {
   position: relative;
 }
 
-/* line 20, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
+/* line 21, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
 .feedback-card__photo {
   height: 100%;
   transform: scale(1.1);
   transition: .5s all;
 }
 
-/* line 24, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
+/* line 25, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
 .feedback-card__name {
   text-align: center;
   position: absolute;
@@ -537,13 +538,13 @@ body {
   transition: .5s all;
 }
 
-/* line 39, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
+/* line 40, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
 .feedback-card:hover .feedback-card__name {
   transform: translate(-50%, -50%);
   opacity: 1;
 }
 
-/* line 42, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
+/* line 43, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/components/_feedback-card.sass */
 .feedback-card:hover .feedback-card__photo {
   transform: scale(1);
   filter: blur(4px) brightness(75%);
@@ -766,6 +767,84 @@ body {
 /* line 29, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_grid.sass */
 .col-3-of-4 {
   width: calc((100% - 3 * 6rem) / 4 * 3 + 2 * 6rem);
+}
+
+/* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.footer {
+  height: 38rem;
+  background: #333333;
+  padding-top: 8rem;
+}
+
+/* line 5, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.footer__logo-wrapper {
+  margin-bottom: 5rem;
+}
+
+/* line 7, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.footer__logo {
+  width: 12rem;
+  height: 15rem;
+}
+
+/* line 13, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav {
+  list-style: none;
+  text-align: center;
+}
+
+/* line 16, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav__list-item {
+  display: inline-block;
+}
+
+/* line 18, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav__list-item:not(:last-child) {
+  margin-right: 5rem;
+}
+
+/* line 20, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+/* line 27, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav__link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.2rem;
+  background: #BA8554;
+  bottom: -0.3rem;
+  right: 0;
+  left: 0;
+  transition: all .5s;
+}
+
+/* line 37, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav__link:link, .nav__link:visited {
+  text-decoration: none;
+  transition: all .5s;
+}
+
+/* line 40, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav__link:hover {
+  transform: translateY(-0.4rem) scale(1.1);
+}
+
+/* line 42, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav__link:hover::after {
+  width: 100%;
+}
+
+/* line 44, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_footer.sass */
+.nav__link:active {
+  transform: translateY(-0.2rem);
 }
 
 /* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/pages/_home.sass */

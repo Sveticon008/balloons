@@ -1,0 +1,45 @@
+.footer
+    height: 38rem
+    background: #333333
+    padding-top: 8rem
+    &__logo-wrapper
+        margin-bottom: 5rem
+    &__logo
+        width: 12rem
+        height: 15rem
+        
+        
+
+.nav
+    list-style: none
+    text-align: center
+    &__list-item
+        display: inline-block
+        &:not(:last-child)
+            margin-right: 5rem
+    &__link
+        text-decoration: none
+        color: #FFFFFF
+        font-weight: 300
+        display: inline-block
+        position: relative
+        backface-visibility: hidden
+        &::after
+            content: ""
+            position: absolute
+            width: 0
+            height: 0.2rem
+            background: $color-brown
+            bottom: -0.3rem
+            right: 0
+            left: 0
+            transition: all .5s
+        &:link, &:visited
+            text-decoration: none
+            transition: all .5s
+        &:hover
+            transform: translateY(-.4rem) scale(1.1)
+            &::after
+                width: 100%
+        &:active
+            transform: translateY(-.2rem)
