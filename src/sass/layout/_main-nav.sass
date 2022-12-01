@@ -1,0 +1,60 @@
+.main-nav
+    &__toggle
+        display: none
+    &__button
+        background-color: #FFFFFF
+        width: 9rem
+        height: 9rem
+        border-radius: 50%
+        position: fixed
+        right: 6.5rem
+        top: 5.5rem
+        z-index: 200
+    &__background
+        width: 7rem
+        height: 7rem
+        border-radius: 50%
+        background: radial-gradient($color-brown, $color-dark-brown)
+        position: fixed
+        right: 7.5rem
+        top: 6.5rem
+        z-index: 100
+        transform: scale(90)
+    &__menu
+        height: 100vh
+        width: 100%
+        position: fixed
+        top: 0
+        right: 0
+        z-index: 150
+    &__list
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        list-style: none
+    &__list-item
+        text-align: center
+        text-transform: uppercase
+        letter-spacing: 1rem
+        color: #FFFFFF
+        font-size: 4rem
+        letter-spacing: .5rem
+        font-weight: 300
+        line-height: 4.8rem
+        &:not(:last-child)
+            margin-bottom: 6rem
+    &__link
+        &:link, &:visited
+            text-decoration: none
+            color: #FFFFFF
+            background: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%)
+            background-size: 230%
+            padding: 1rem 2rem
+            transition: all .6s
+            display: inline-block
+        &:hover, &:active
+            background-position: 100%
+            color: $color-dark-brown
+            transform: translateX(1rem)
+            

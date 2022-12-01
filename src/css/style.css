@@ -847,6 +847,90 @@ body {
   transform: translateY(-0.2rem);
 }
 
+/* line 2, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__toggle {
+  display: none;
+}
+
+/* line 4, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__button {
+  background-color: #FFFFFF;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  position: fixed;
+  right: 6.5rem;
+  top: 5.5rem;
+  z-index: 200;
+}
+
+/* line 13, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__background {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: radial-gradient(#BA8554, #A14F03);
+  position: fixed;
+  right: 7.5rem;
+  top: 6.5rem;
+  z-index: 100;
+  transform: scale(90);
+}
+
+/* line 23, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__menu {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 150;
+}
+
+/* line 30, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+/* line 36, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__list-item {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: #FFFFFF;
+  font-size: 4rem;
+  letter-spacing: .5rem;
+  font-weight: 300;
+  line-height: 4.8rem;
+}
+
+/* line 45, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__list-item:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+/* line 48, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__link:link, .main-nav__link:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+  background: linear-gradient(120deg, transparent 0%, transparent 50%, #FAFAFA 50%);
+  background-size: 230%;
+  padding: 1rem 2rem;
+  transition: all .6s;
+  display: inline-block;
+}
+
+/* line 56, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+.main-nav__link:hover, .main-nav__link:active {
+  background-position: 100%;
+  color: #A14F03;
+  transform: translateX(1rem);
+}
+
 /* line 1, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/pages/_home.sass */
 .section-about {
   padding-top: 8rem;
