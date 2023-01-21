@@ -24,12 +24,12 @@
         transition: all .7s
     &__menu
         height: 100vh
-        width: 0
         position: fixed
         top: 0
         right: 0
         z-index: 150
         opacity: 0
+        width: 0
         transition: all .3s cubic-bezier(0.68, -0.6, 0.32, 1.6)
     &__list
         position: absolute
@@ -37,6 +37,7 @@
         left: 50%
         transform: translate(-50%, -50%)
         list-style: none
+        width: 100%
     &__list-item
         text-align: center
         text-transform: uppercase
@@ -46,7 +47,6 @@
         letter-spacing: .5rem
         font-weight: 300
         line-height: 4.8rem
-        width: 100%
         &:not(:last-child)
             margin-bottom: 6rem
     &__link
@@ -69,12 +69,12 @@
         opacity: 1
     &__icon
         position: relative
-        margin-top: 37px
+        margin-top: 3.7rem
         &,
         &::before,
         &::after
-            width: 30px
-            height: 2px
+            width: 3rem
+            height: .2rem
             background: $color-black
             display: inline-block
         &::before,
@@ -84,13 +84,13 @@
             left: 0
             transition: all .2s
         &::before
-            top: 8px
+            top: .8rem
         &::after
-            top: -8px
+            top: -.8rem
     &__button:hover &__icon::before
-        top: 10px
+        top: 1rem
     &__button:hover &__icon::after
-        top: -10px
+        top: -1rem
     &__toggle:checked + &__button &__icon
         background: transparent
     &__toggle:checked + &__button &__icon::before

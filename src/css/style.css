@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* 4 брейкпоинта в аргументах миксина:
+    - phone
+    - tab-port
+    - tab-land
+    - big-screen
+    */
 @keyframes leftToRight {
   0% {
     opacity: 0;
@@ -44,13 +50,41 @@ html {
   font-size: 62.5%;
 }
 
-/* line 10, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_base.sass */
+@media (max-width: 1200px) {
+  /* line 7, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_base.sass */
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* line 7, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_base.sass */
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 7, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_base.sass */
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (min-width: 1800px) {
+  /* line 7, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_base.sass */
+  html {
+    font-size: 75%;
+  }
+}
+
+/* line 18, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_base.sass */
 body {
   padding: 5rem;
   background-color: white;
 }
 
-/* line 14, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_base.sass */
+/* line 22, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/base/_base.sass */
 .main-container {
   background-color: #F7F7F7;
 }
@@ -882,12 +916,12 @@ body {
 /* line 25, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
 .main-nav__menu {
   height: 100vh;
-  width: 0;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 150;
   opacity: 0;
+  width: 0;
   transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
@@ -898,9 +932,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
+  width: 100%;
 }
 
-/* line 40, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
+/* line 41, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
 .main-nav__list-item {
   text-align: center;
   text-transform: uppercase;
@@ -910,7 +945,6 @@ body {
   letter-spacing: .5rem;
   font-weight: 300;
   line-height: 4.8rem;
-  width: 100%;
 }
 
 /* line 50, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
@@ -950,13 +984,13 @@ body {
 /* line 70, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
 .main-nav__icon {
   position: relative;
-  margin-top: 37px;
+  margin-top: 3.7rem;
 }
 
 /* line 73, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
 .main-nav__icon, .main-nav__icon::before, .main-nav__icon::after {
-  width: 30px;
-  height: 2px;
+  width: 3rem;
+  height: .2rem;
   background: #000000;
   display: inline-block;
 }
@@ -971,22 +1005,22 @@ body {
 
 /* line 86, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
 .main-nav__icon::before {
-  top: 8px;
+  top: .8rem;
 }
 
 /* line 88, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
 .main-nav__icon::after {
-  top: -8px;
+  top: -.8rem;
 }
 
 /* line 90, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
 .main-nav__button:hover .main-nav__icon::before {
-  top: 10px;
+  top: 1rem;
 }
 
 /* line 92, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
 .main-nav__button:hover .main-nav__icon::after {
-  top: -10px;
+  top: -1rem;
 }
 
 /* line 94, ../../Desktop/Проекты/Материалы web-разработка продвинутый уровень/My-project-balloons/src/sass/layout/_main-nav.sass */
