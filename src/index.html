@@ -16,15 +16,17 @@
 
         <div class="main-nav">
             <input type="checkbox" class="main-nav__toggle" id="main-nav-toggle">
-            <label for="main-nav-toggle" class="main-nav__button">MENU</label>
+            <label for="main-nav-toggle" class="main-nav__button">
+                <span class="main-nav__icon"></span>
+            </label>
             <div class="main-nav__background"></div>
             <nav class="main-nav__menu">
                 <ul class="main-nav__list">
-                    <li class="main-nav__list-item"><a href="#" class="main-nav__link">о нас</a></li>
-                    <li class="main-nav__list-item"><a href="#" class="main-nav__link">скидки</a></li>
-                    <li class="main-nav__list-item"><a href="#" class="main-nav__link">лучшие туры</a></li>
-                    <li class="main-nav__list-item"><a href="#" class="main-nav__link">калькулятор цен</a></li>
-                    <li class="main-nav__list-item"><a href="#" class="main-nav__link">связаться с нами</a></li>
+                    <li class="main-nav__list-item"><a href="#about-us" class="main-nav__link">о нас</a></li>
+                    <li class="main-nav__list-item"><a href="#discounts" class="main-nav__link">скидки</a></li>
+                    <li class="main-nav__list-item"><a href="#tours" class="main-nav__link">лучшие туры</a></li>
+                    <li class="main-nav__list-item"><a href="#book" class="main-nav__link">калькулятор цен</a></li>
+                    <li class="main-nav__list-item"><a href="#book" class="main-nav__link">связаться с нами</a></li>
                 </ul>
             </nav>
         </div>
@@ -68,7 +70,7 @@
 
             </section>
 
-            <section class="section-features">
+            <section class="section-features mb-80px">
                 <div class="row">
                     <div class="col-1-of-4">
 
@@ -271,8 +273,8 @@
 
                             <form action="#" class="form">
                                 <div class="book-card__input-wrapper">
-                                    <input type="text" class="form-name form__input paragraph" placeholder="Имя Фамилия" id="name" required pattern="[A-Za-zА-Яа-яЁё]+$\s?">
-                                    <label for="name" class="form__label paragraph">Ваше имя и фамилия</label>
+                                    <input type="text" class="form-name form__input paragraph" placeholder="Имя" id="name" required pattern="[A-Za-zА-Яа-яЁё]+$\s?">
+                                    <label for="name" class="form__label paragraph">Ваше имя</label>
                                 </div>
                             
                                 
@@ -339,15 +341,9 @@
 $(function(){
     $(".form-phone").mask("+7(999)999-99-99");
 });
-
-form.submit(function(e){
-    e.preventDefault();
-    if (form.valid()) {
-        alert('Форма отправлена');
-    }
-    return;
-});
 </script>
+<script src="js/menu-closer.js"></script>
+<script src="js/smooth-scroll.js"></script>
 
 
 

@@ -3,30 +3,34 @@
         display: none
     &__button
         background-color: #FFFFFF
-        width: 9rem
-        height: 9rem
+        width: 8rem
+        height: 8rem
         border-radius: 50%
         position: fixed
-        right: 6.5rem
-        top: 5.5rem
+        right: 9rem
+        top: 9rem
         z-index: 200
+        text-align: center
+        cursor: pointer
     &__background
         width: 7rem
         height: 7rem
         border-radius: 50%
         background: radial-gradient($color-brown, $color-dark-brown)
         position: fixed
-        right: 7.5rem
-        top: 6.5rem
+        right: 9rem
+        top: 9.5rem
         z-index: 100
-        transform: scale(90)
+        transition: all .7s
     &__menu
         height: 100vh
-        width: 100%
+        width: 0
         position: fixed
         top: 0
         right: 0
         z-index: 150
+        opacity: 0
+        transition: all .3s cubic-bezier(0.68, -0.6, 0.32, 1.6)
     &__list
         position: absolute
         top: 50%
@@ -42,6 +46,7 @@
         letter-spacing: .5rem
         font-weight: 300
         line-height: 4.8rem
+        width: 100%
         &:not(:last-child)
             margin-bottom: 6rem
     &__link
@@ -57,4 +62,41 @@
             background-position: 100%
             color: $color-dark-brown
             transform: translateX(1rem)
+    &__toggle:checked ~ &__background
+        transform: scale(90)
+    &__toggle:checked ~ &__menu
+        width: 100%
+        opacity: 1
+    &__icon
+        position: relative
+        margin-top: 37px
+        &,
+        &::before,
+        &::after
+            width: 30px
+            height: 2px
+            background: $color-black
+            display: inline-block
+        &::before,
+        &::after
+            content: ""
+            position: absolute
+            left: 0
+            transition: all .2s
+        &::before
+            top: 8px
+        &::after
+            top: -8px
+    &__button:hover &__icon::before
+        top: 10px
+    &__button:hover &__icon::after
+        top: -10px
+    &__toggle:checked + &__button &__icon
+        background: transparent
+    &__toggle:checked + &__button &__icon::before
+        top: 0
+        transform: rotate(135deg)
+    &__toggle:checked + &__button &__icon::after
+        top: 0
+        transform: rotate(-135deg)
             
