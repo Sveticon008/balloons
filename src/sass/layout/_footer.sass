@@ -2,11 +2,17 @@
     height: 38rem
     background: #333333
     padding-top: 8rem
+    @include respond (tab-land)
+        height: 30rem
+        padding-top: 4rem
     &__logo-wrapper
         margin-bottom: 5rem
     &__logo
         width: 12rem
         height: 15rem
+        @include respond (tab-land)
+            width: 9rem
+            height: 12rem
         
         
 
@@ -17,6 +23,9 @@
         display: inline-block
         &:not(:last-child)
             margin-right: 5rem
+        @include respond (tab-land)
+            &:not(:last-child)
+                margin-right: 2.5rem
     &__link
         text-decoration: none
         color: #FFFFFF

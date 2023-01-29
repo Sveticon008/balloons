@@ -6,6 +6,9 @@
     padding: 5.5rem 9rem 6.5rem 9rem
     transform: skewX(-13deg)
     backface-visibility: hidden
+    @include respond (tab-land)
+        width: 90%
+        padding: 5.5rem 4rem 6.5rem 4rem
     & > *
         transform: skewX(13deg)
     &__img

@@ -8,15 +8,26 @@
         z-index: 10
         transition: all .3s
         outline-offset: 0.5rem
+        @include respond (tab-land)
+            width: 70%
         &_back
             top: 0
             left: 1.5rem
+            @include respond (tab-land)
+                top: 10rem
+                left: 0rem
         &_middle
             top: 3rem
             right: 1rem
+            @include respond (tab-land)
+                top: 15rem
+                right: 0rem
         &_front
             top: 13rem
             left: 10rem
+            @include respond (tab-land)
+                top: 25rem
+                left: 5rem
         &:hover
             outline: 1.5rem solid $color-dark-brown
             transform: scale(1.1)

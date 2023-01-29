@@ -20,6 +20,8 @@ body
         animation: leftToRight 2s ease .8s
         backface-visibility: hidden
         animation-fill-mode: backwards
+        @include respond (tab-land)
+            font-size: 4rem
     &__secondary
         display: block
         font-size: 4rem
@@ -30,6 +32,9 @@ body
         animation: RightToLeft 2s ease .8s
         backface-visibility: hidden
         animation-fill-mode: backwards
+        @include respond (tab-land)
+            font-size: 3rem
+            margin-bottom: 3.5rem
 
 .section-about
     &__text
@@ -63,3 +68,5 @@ body
     font-weight: 400
     letter-spacing: .2rem
     font-size: 1.6rem
+    @include respond (tab-land)
+        font-size: 1.8rem
