@@ -24,6 +24,8 @@
     letter-spacing: .5rem
     line-height: 2.4rem
     color: $color-grey
+    @include respond (tab-port)
+        font-size: 3rem
     &, &:link, &:visited
         @include link-style
         transition: all .8s
@@ -39,6 +41,8 @@
         box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.1)
     &_main
         padding: 1.5rem 4rem
+        @include respond (tab-port)
+            padding: 2.5rem 5rem
     &_white
         box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.3)
         padding: 1.5rem 2rem

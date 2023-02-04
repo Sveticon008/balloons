@@ -9,6 +9,8 @@ body
     text-transform: uppercase
     letter-spacing: 1rem
     font-weight: 800
+    @include respond (tab-port)
+        letter-spacing: .5rem
 
 .title-first
     color: #FFFFFF
@@ -35,6 +37,8 @@ body
         @include respond (tab-land)
             font-size: 3rem
             margin-bottom: 3.5rem
+        @include respond (tab-port)
+            letter-spacing: .3rem
 
 .section-about
     &__text
@@ -63,6 +67,9 @@ body
     font-size: 2rem
     line-height: 2.4rem
     margin-bottom: 1rem
+    @include respond (tab-port)
+        font-size: 2.5rem
+        letter-spacing: .4rem
 
 .paragraph
     font-weight: 400
@@ -70,3 +77,6 @@ body
     font-size: 1.6rem
     @include respond (tab-land)
         font-size: 1.8rem
+    @include respond (tab-port)
+        font-size: 2.2rem
+        letter-spacing: .3rem

@@ -9,8 +9,12 @@
     @include respond (tab-land)
         width: 90%
         padding: 5.5rem 4rem 6.5rem 4rem
+    @include respond (tab-port)
+        transform: skewX(352deg)
     & > *
         transform: skewX(13deg)
+        @include respond (tab-port)
+            transform: skewX(-352deg)
     &__img
         width: 15rem
         height: 15rem

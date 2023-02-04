@@ -3,6 +3,8 @@
     perspective: 150rem
     -moz-perspective: 150rem
     position: relative
+    @include respond (tab-port)
+        height: 70rem
     &__side
         height: 50.2rem
         border-radius: 0.3rem
@@ -15,6 +17,8 @@
         left: 0
         width: 100%
         backface-visibility: hidden
+        @include respond (tab-port)
+            height: 70rem
         &_front
             background: #FFFFFF
         &_back
@@ -29,6 +33,8 @@
         background-blend-mode: overlay
         height: 45%
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+        @include respond (tab-port)
+            height: 55%
         &_1
             background: $color-brown url(../img/card-1.jpg) center / cover no-repeat
         &_2
@@ -46,6 +52,9 @@
         position: absolute
         top: 17.6rem
         right: 0
+        @include respond (tab-port)
+            font-size: 3rem
+            top: 33.6rem
     &__span
         background: $color-gradient-brown-white
         padding: 1rem 2rem .3rem 2rem
@@ -64,18 +73,24 @@
         line-height: 1.9rem
         letter-spacing: .2rem
         padding-top: 6rem
+        @include respond (tab-port)
+            font-size: 3rem
+            padding-top: 7rem
     .description__list-item
-        display: inline-block
-        border-bottom: 1px solid $color-grey
+        text-decoration: underline 1px solid $color-grey
         &:not(:last-child)
             margin-bottom: 2rem
+        @include respond (tab-port)
+            text-decoration: underline 2px solid $color-grey
 
     &__price-wrapper
         height: 100%
         display: flex
+        flex-direction: column
         flex-wrap: wrap
-        align-content: space-evenly
-        justify-content: center
+        align-content: center
+        justify-content: space-evenly
+        align-items: center
     .price-wrapper
         &__text
             color: #FFFFFF
@@ -85,7 +100,11 @@
             font-weight: 500
             font-size: 6rem
             line-height: 7.2rem
+            @include respond (tab-port)
+                font-size: 9rem
         &__btn
             padding: 1.5rem 2rem
             @include respond (tab-land)
-                font-size: 1.8rem
+                font-size: 2.5rem
+            @include respond (tab-port)
+                font-size: 2.9rem

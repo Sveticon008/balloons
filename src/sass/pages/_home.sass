@@ -1,12 +1,16 @@
 .section-about
     padding-top: 8rem
     margin-bottom: 5.4rem
+    @include respond (tab-port)
+        margin-bottom: 40rem
 
 .section-features
     background: linear-gradient(91.4deg, rgba(186, 133, 84, 0.7) 0.7%, rgba(1, 1, 1, 0.7) 98.8%), url(../img/features-bg.jpg) center / cover no-repeat
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%)
     padding-top: 21.6rem
     padding-bottom: 21.5rem
+    @include respond (tab-port)
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
     &__icon
         font-size: 6.2rem
 

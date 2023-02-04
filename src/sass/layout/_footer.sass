@@ -3,8 +3,11 @@
     background: #333333
     padding-top: 8rem
     @include respond (tab-land)
-        height: 30rem
-        padding-top: 4rem
+        height: 35rem
+        padding-left: 2rem
+        padding-right: 2rem
+    @include respond (tab-port)
+        height: 52rem
     &__logo-wrapper
         margin-bottom: 5rem
     &__logo
@@ -21,18 +24,28 @@
     text-align: center
     &__list-item
         display: inline-block
+        margin-bottom: 2rem
         &:not(:last-child)
             margin-right: 5rem
         @include respond (tab-land)
             &:not(:last-child)
                 margin-right: 2.5rem
+        @include respond (tab-port)
+            display: block
+            margin-bottom: 2.3rem
+            &:not(:last-child)
+                margin-right: 0rem
+
     &__link
         text-decoration: none
         color: #FFFFFF
         font-weight: 300
+        font-size: 2rem
         display: inline-block
         position: relative
         backface-visibility: hidden
+        @include respond (tab-port)
+            font-size: 2.5rem
         &::after
             content: ""
             position: absolute
