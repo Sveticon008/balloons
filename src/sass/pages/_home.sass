@@ -11,6 +11,8 @@
     padding-bottom: 21.5rem
     @include respond (tab-port)
         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
+    @include respond (phone)
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%)
     &__icon
         font-size: 6.2rem
 
@@ -29,4 +31,6 @@
     background: $color-gradient-brown-white
     @include respond (tab-land)
         padding: 5rem
+    @include respond (phone)
+        padding: 5rem 2rem
 

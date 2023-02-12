@@ -6,6 +6,9 @@
     @include respond (tab-port)
         height: 60rem
         background: linear-gradient(108deg, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.96) 75.9%, rgba(186,133,84,0.76) 77%, rgba(161,79,3,0.76) 100%), url(../img/form-bg.jpg) center / cover no-repeat
+    @include respond (phone)
+        height: 74rem
+        background: linear-gradient(93deg, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.96) 98%, rgba(186,133,84,0.76) 99%, rgba(161,79,3,0.76) 100%), url(../img/form-bg.jpg) center / cover no-repeat
     &__form
         width: 70%
         padding-left: 5rem
@@ -13,6 +16,8 @@
             width: 75%
             padding-left: 2.5rem
         @include respond (tab-port)
+            width: 100%
+        @include respond (phone)
             width: 100%
     &__title
         text-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25)
@@ -55,6 +60,8 @@
         @include respond (tab-port)
             width: 80%
             box-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25)
+        @include respond (phone)
+            width: 86%
         &:focus
             outline: none
             border-bottom: solid .2rem #66D763
@@ -84,6 +91,9 @@
             position: absolute
             top: -0.5rem
             left: -3.5rem
+            @include respond (phone)
+                top: 0.5rem
+                left: -4.5rem
             &::after
                 content: ""
                 display: block

@@ -24,6 +24,8 @@ body
         animation-fill-mode: backwards
         @include respond (tab-land)
             font-size: 4rem
+        @include respond (phone)
+            font-size: 5rem
     &__secondary
         display: block
         font-size: 4rem
@@ -39,6 +41,8 @@ body
             margin-bottom: 3.5rem
         @include respond (tab-port)
             letter-spacing: .3rem
+        @include respond (phone)
+            font-size: 4.5rem
 
 .section-about
     &__text
@@ -54,6 +58,8 @@ body
     color: transparent
     transition: all 1s
     backface-visibility: hidden
+    @include respond (phone)
+        font-size: 4.2rem
     &_animated
         &:hover
             transform-origin: 50% 20%
@@ -70,6 +76,9 @@ body
     @include respond (tab-port)
         font-size: 2.5rem
         letter-spacing: .4rem
+    @include respond (phone)
+        font-size: 4rem
+        line-height: 4rem
 
 .paragraph
     font-weight: 400
@@ -80,3 +89,7 @@ body
     @include respond (tab-port)
         font-size: 2.2rem
         letter-spacing: .3rem
+    @include respond (phone)
+        font-size: 3.5rem
+        line-height: 3.5rem
+        

@@ -8,6 +8,9 @@
         max-width: 85rem
     @include respond (tab-port)
         max-width: 60rem
+    @include respond (phone)
+        &:not(:last-child)
+            margin-bottom: 4rem
 
 .col-1-of-2
     width: calc((100% - #{$gutter-horizontal}) / 2)
