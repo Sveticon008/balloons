@@ -9,6 +9,8 @@
     @include respond (phone)
         height: 74rem
         background: linear-gradient(93deg, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.96) 98%, rgba(186,133,84,0.76) 99%, rgba(161,79,3,0.76) 100%), url(../img/form-bg.jpg) center / cover no-repeat
+    @media ( min-resolution: 192dpi ) and (min-width: 670px), (min-width: 1340px)
+        background: linear-gradient(108deg, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.96) 54.9%, rgba(230, 101, 8, 0.7) 55%, rgba(161,79,3,0.76) 100%), url(../img/form-bg-2x.jpg) center / cover no-repeat
     &__form
         width: 70%
         padding-left: 5rem
