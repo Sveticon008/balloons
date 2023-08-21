@@ -26,6 +26,10 @@
             height: 80rem
         &_front
             background: #FFFFFF
+        &_animated
+            @include respond (phone)
+                animation: Shaker .35s linear .2s 3
+                backface-visibility: hidden
         &_back
             background: linear-gradient(156.85deg, #C3956A 3.65%, #A24F03 100%)
             transform: rotateY(180deg)
